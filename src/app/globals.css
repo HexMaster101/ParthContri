@@ -10,7 +10,6 @@ html {
 }
 
 body {
-	background-color: black;
 	overflow-x: hidden;
 }
 
@@ -23,12 +22,128 @@ a {
 	text-decoration: none;
 }
 
-#particleBg {
+#particle-js {
 	position: absolute;
 	inset: 0;
-	z-index: -1;
+	z-index: 1;
 }
 
-h1 {
-	color: white;
+/* <-----Vertical Line-----> */
+
+.timeline-home {
+	position: absolute;
+	height: 67%;
+	bottom: 0;
+	left: 19%;
+	margin-left: 13.5px;
+	border: 2px #1b92b6 solid;
+	transform: translate(-40px, 0px);
+}
+
+.bullet-home {
+	background-color: transparent !important;
+	top: -9px !important;
+}
+
+.timeline {
+	z-index: 0;
+	position: absolute;
+	height: 100%;
+	margin-left: 13.5px;
+	border: 2px #1b92b6 solid;
+	top: 0;
+	bottom: 0;
+	left: 19%;
+	transform: translate(-40px, 0px);
+}
+
+.bullet {
+	background-color: #f4fafb;
+	position: absolute;
+	border: 3px #1b92b6 solid;
+	height: 9px;
+	width: 9px;
+	border-radius: 100px;
+	top: 34px;
+	margin-left: -4.25px;
+	left: 19%;
+}
+
+.home-text {
+	position: absolute;
+	font-size: 16px;
+	font-weight: 500;
+	top: 33%;
+	margin-top: -14px;
+	left: 19%;
+}
+
+.about-text {
+	margin-top: -2px;
+	display: inline-block;
+	position: absolute;
+	left: 19%;
+	top: 30px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+svg#mouse {
+	position: absolute;
+	height: 30px;
+	top: 240px;
+	transform: translate(-15px, 35px);
+}
+
+span[name="scroll-button"] {
+	font-weight: 500;
+	top: 300px;
+	font-size: 20px;
+	position: absolute;
+	transform: translate(-40px, 35px) rotate(-90deg);
+}
+
+/* <----Home Section----> */
+
+#home-background {
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("/images/home.jpg");
+}
+
+.home-background {
+	height: 100vh;
+}
+
+.intro {
+	position: absolute;
+	top: 33%;
+	margin-top: 60px;
+	left: 19%;
+	margin-left: 40px;
+}
+
+.intro-text {
+	font-weight: 400;
+	font-size: 30px;
+}
+
+.my-name {
+	font-weight: 500;
+	color: #005a68;
+}
+
+.word-design {
+	font-size: 46px;
+	font-family: italicFont;
+	font-weight: 500;
+	color: #005a68;
+}
+
+.intro-para {
+	margin-top: 32px;
+	font-size: 20px;
+	font-weight: 400;
 }

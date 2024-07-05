@@ -1,19 +1,63 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
+import React from "react";
+import Particles from "./Particles";
 
 function Homepage() {
-	useEffect(() => {
-		// Initialize your particle background script here
-		setLoaded(true);
-	}, []);
-	const [isloaded, setLoaded] = useState(false);
 	return (
 		<>
-			{isloaded && <div id="particleBg"></div>}
-
-			<h1>Hello World!!</h1>
+			<Particles />
+			<HomeText />
 		</>
+	);
+}
+
+function HomeText() {
+	return (
+		<section id="home-background">
+			<div className="container home-background">
+				<p className="home-text">Home/{">"}</p>
+				<div className="intro">
+					<h1 className="intro-text">
+						Hii, My Name Is <span className="my-name">Tanishk Gupta</span>
+					</h1>
+					<h1 className="intro-text">
+						i <span className="word-design">design</span> and develop
+						webpages/web-apps.
+					</h1>
+					<p className="intro-para">Let me show You...</p>
+				</div>
+
+				{/* <------TIMELINE--------> */}
+
+				<div className="timeline-home">
+					<div className="bullet-home bullet"></div>
+					<a href="#wid-section" className="link">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 32 32"
+							id="mouse"
+						>
+							<g
+								data-name="Layer 2"
+								fill="#ffffff"
+								className="color000000 svgShape"
+							>
+								<path
+									d="M16,2a9.01,9.01,0,0,0-9,9V21a9,9,0,0,0,18,0V11A9.01,9.01,0,0,0,16,2Zm7,19A7,7,0,0,1,9,21V11a7,7,0,0,1,14,0Z"
+									fill="#ffffff"
+									className="color000000 svgShape"
+								></path>
+								<path
+									d="M16,8a1,1,0,0,0-1,1v4a1,1,0,0,0,2,0V9A1,1,0,0,0,16,8Z"
+									fill="#ffffff"
+									className="color000000 svgShape"
+								></path>
+							</g>
+						</svg>
+						<span name="scroll-button">SCROLL</span>
+					</a>
+				</div>
+			</div>
+		</section>
 	);
 }
 
